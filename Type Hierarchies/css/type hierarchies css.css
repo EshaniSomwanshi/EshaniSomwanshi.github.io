@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html body{
+    background-color:#fcfcfc;
+}
+
+.bg-body-tertiary {
+    background-color:#e5e5e5!important;
+
+  }
+
+  .nav-link{
+    color:#101010 !important;
+  }
+
+  .nav-link:hover{
+    color: #07004b !important;
+  }
+
+  .navbar-brand{
+    color: #0a0a0a !important;
+  }
+
+  .active{
+    color: #101010 !important;
+  }
+
+  .navbar-toggler{
+    color: #07004b;
+  }
+
+
+  .footer-es{
+    text-align: center;
+    background:#ededed!important;
+  }
+
+  .m-esh-top{
+    margin-top: 10vh;
+  }
+  .p-bottom{
+    padding-bottom:-50vh;
+  }
+
+.esh-info-color{
+  color:#ff0000;
+}
+
+.link-hover:hover{
+  color:#7519d8 !important;
+  text-decoration: none;
+  cursor:grab;
+
+}
+
+.textcol{
+
+  color:#7519d8 !important;
+}
+
+.syne-h1 {
+  font-family: "Syne", sans-serif;
+  font-size: 2.986rem;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style:normal;
+}
+
+.syne-h2 {
+  font-family: "Syne", sans-serif;
+  font-size: 2.488rem;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style:normal;
+}
+
+
+.syne-h3 {
+  font-family: "Syne", sans-serif;
+  font-size: 2.074rem;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style:normal;
+}
+.syne-h4 {
+  font-family: "Syne", sans-serif;
+  font-size: 1.728rem;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.alegreya-p {
+  font-family: "Alegreya", serif;
+  font-size:1rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alegreya-emp {
+  font-family: "Alegreya", serif;
+  font-size:1rem;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style:italic;
+}
+
+
+.alegreya-h1 {
+  font-family: "Alegreya", serif;
+  font-size:2.986rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.laila-light {
+  font-family: "Laila", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.laila-regular {
+  font-family: "Laila", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.laila-medium {
+  font-family: "Laila", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.laila-semibold {
+  font-family: "Laila", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.laila-bold {
+  font-family: "Laila", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.laila-body{
+  font-family: "Laila", serif;
+  font-size: 1rem;
+  font-weight:400;
+  font-style:normal;
+}
+
+.laila-emp{
+  font-family: "Laila", serif;
+  font-size: 1rem;
+  font-weight:700;
+  font-style:italic;
+}
+
+
+.laila-h1 {
+  font-family: "Laila", serif;
+  font-size: 3.815rem;
+  font-weight:600;
+  font-style:normal;
+}
+
+.laila-h2 {
+  font-family: "Laila", serif;
+  font-size: 3.052rem;
+  font-weight:500;
+  font-style:normal;
+}
+
+.laila-h3 {
+  font-family: "Laila", serif;
+  font-size: 2.441rem;
+  font-weight:500;
+  font-style:normal;
+}
+
+.laila-h4 {
+  font-family: "Laila", serif;
+  font-size: 1.953rem;
+  font-weight:500;
+  font-style:normal;
+}
+
+
+
+.bebas-neue-regular-h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.815rem;
+  font-weight:500;
+  font-style: normal;
+}
+
+.bebas-neue-regular-h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.052rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bebas-neue-regular-h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.441rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bebas-neue-regular-h4 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.953rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bricolage-grotesque-h1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 3.052rem;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  /* font-variation-settings:
+    "wdth" 100; */
+}
+
+.bricolage-grotesque-body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 1rem;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  /* font-variation-settings:
+    "wdth" 100; */
+}
+
+.bricolage-grotesque-emp {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 1rem;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style:italic;
+  /* font-variation-settings:
+    "wdth" 100; */
+}
