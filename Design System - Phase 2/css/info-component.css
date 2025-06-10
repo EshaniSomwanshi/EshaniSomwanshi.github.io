@@ -1,0 +1,60 @@
+
+.body-style{
+        padding-left: 120px !important; 
+    }
+
+.preview-box {
+    background-color: #222222;      /* white background if you want contrast */
+    padding: 40px;
+    /* background-color: #f8f9fa; */
+    border: 1px solid #717171;
+    border-radius: 0.25rem;
+}
+
+
+/*–– Information-Box Styles ––*/
+
+
+.form-label {
+    font-family: 'Avenir Bold';
+    font-weight: 700;
+    font-size: 1rem;
+    color:#ffffff;
+}
+
+
+
+/* hide mobile / desktop previews */
+.info-desktop { 
+    display: none; 
+}
+
+
+@media (min-width: 1212px) {
+    .info-desktop { display: block; }
+    .info-mobile  { display: none; }
+}
+
+@font-face {
+        font-family: 'Avenir Bold'; /* Replace with the name you want to use */
+        src: url('../fonts/Avenir-Heavy-05.ttf') format('truetype'); /* Or .ttf */
+        /* Add fallback fonts if needed */
+        /* Example:  font-style: normal; */
+        /* Example: font-weight: 400; */
+        }
+
+    @font-face {
+        font-family: 'Avenir Roman'; /* Replace with the name you want to use */
+        src: url('../fonts/Avenir-Roman-12.ttf') format('truetype'); /* Or .ttf */
+        /* Add fallback fonts if needed */
+        /* Example:  font-style: normal; */
+        /* Example: font-weight: 400; */
+        }
+
+        /* Code block styling */
+    .code-background {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 0.25rem;
+      overflow-x: auto;
+    }

@@ -1,0 +1,86 @@
+.body-style{
+        padding-left: 120px !important; 
+    }
+    
+    /*–––– Footer Component Styles ––––*/
+.footer-component {
+    background-color: #111;
+    color: #e3e3e3;
+}
+.footer-component a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.footer-component a:hover {
+    color: #fde3e3;
+}
+.footer-logo {
+    font-family: 'Allura', cursive;
+    font-size: 1.75rem;
+    color: #e3e3e3;
+}
+.footer-info {
+    font-family: 'Avenir Roman';
+    font-size: 0.7rem;
+    color: #ccc;
+}
+.footer-links a {
+    margin-left: 1rem;
+    font-family: 'Avenir Roman';
+    font-size: 0.7rem;
+    display: inline-flex;
+  align-items: center;    /* vertically centers img + text */
+  text-decoration: none;
+}
+.footer-links .linkedin-link {
+  position: relative;       /* so its child img is positioned relative to this */
+  display: inline-block;    /* shrink‐wrap the link text + padding */
+  padding-left: 24px;       /* room for a 20px icon + 4px gutter */
+  text-decoration: none;
+  color: inherit;
+}
+.footer-links .linkedin-link .footer-icon {
+  position: absolute;
+  left: 0;                  /* flush to the link’s left edge */
+  top: 50%;                 /* vertical centering trick */
+  transform: translateY(-50%);
+  width: 20px;              /* whatever size you prefer */
+  height: auto;
+  z-index: 1;               /* above the background in case you have one */
+   margin-top: -2px;      /* pull it up by 2px */
+}
+
+
+/* hide mobile footer on desktop, and vice versa */
+.footer-mobile { display: none; }
+@media (max-width: 1290px) {
+    .footer-desktop { display: none; }
+    .footer-mobile  { display: block; }
+    .footer-mobile .footer-component {
+    text-align: center;
+    padding: 2rem 1rem;
+    }
+    .footer-mobile .footer-links {
+    margin-top: 1rem;
+    }
+}
+
+/* only for desktop preview */
+@media (min-width: 1290px) {
+  .footer-desktop .footer-links {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem; /* adjust to taste */
+  }
+}
+
+
+/* Code block styling */
+.code-background {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: .25rem;
+    overflow-x: auto;
+}

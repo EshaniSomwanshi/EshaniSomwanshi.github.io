@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini-Design System: Challenge Section</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet" />
+
+  <!-- Sidebar & component CSS -->
+  <link href="../css/sidebars.css" rel="stylesheet" />
+  <link href="../css/components.css" rel="stylesheet" />
+  <link href="../css/challenge.css" rel="stylesheet" />
+   <link rel="shortcut icon" href="./images/Logos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/Logos/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light bg-success border-bottom-0 sticky-top ">
+    <!-- Navbar toggle button (hamburger icon) -->
+
+
+    <button class="navbar-toggler d-block d-md-none navbar-hieght" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#sidebar" aria-controls="sidebar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+  </nav>
+  
+
+  <!-- Offcanvas Sidebar -->
+  <div class="offcanvas offcanvas-start bg-success d-md-block" id="sidebar" tabindex="-1"
+    aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+      <a href="../index.html"
+        class="d-flex justify-content-center align-items-center text-center pb-3 link-dark text-decoration-none border-bottom">
+        <img src="../images/Logos/White Logo_no bg.png" alt="Eshani Somwanshi Logo" style="height: 120px; width: auto;">
+      </a>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
+            Foundations
+          </button>
+          <div class="collapse" id="foundations-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="../foundation/type.html"
+                  class="link-dark d-inline-flex text-decoration-none rounded">Typography</a></li>
+              <li><a href="../foundation/color.html"
+                  class="link-dark d-inline-flex text-decoration-none rounded">Color</a></li>
+              <li><a href="../foundation/logo.html"
+                  class="link-dark d-inline-flex text-decoration-none rounded">Logo</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+            Components
+          </button>
+          <div class="collapse show" id="components-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="../components/navbar.html"
+                  class="link-dark d-inline-flex text-decoration-none rounded">Navigation Bar</a></li>
+              <li><a href="../components/button.html"
+                  class="link-dark d-inline-flex text-decoration-none rounded">Buttons</a></li>
+              <li><a href="../components/info.html"
+                  class="link-dark d-inline-flex text-decoration-none rounded">Information Boxes</a></li>
+              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Case Study Challenge
+                  Section</a></li>
+              <li><a href="../components/footer.html"
+                  class="link-dark d-inline-flex text-decoration-none rounded">Footer</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+            Page Patterns
+          </button>
+          <div class="collapse" id="patterns-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="../patterns/page1.html"
+                  class="link-dark d-inline-flex text-decoration-none rounded">Homepage</a></li>
+              <li><a href="../patterns/page2.html" class="link-dark d-inline-flex text-decoration-none rounded">Case
+                  Study</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Static sidebar for md+ -->
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar shadow">
+        <div class="position-sticky bg-success vh-100">
+          <div class="pt-3">
+            <a href="../index.html"
+              class="d-flex justify-content-center align-items-center text-center pb-3 link-dark text-decoration-none border-bottom">
+              <img src="../images/Logos/White Logo_no bg.png" alt="Eshani Somwanshi Logo"
+                style="height: 120px; width: auto;">
+            </a>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                  data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
+                  Foundations
+                </button>
+                <div class="collapse" id="foundations-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="../foundation/type.html"
+                        class="link-dark d-inline-flex text-decoration-none rounded">Typography</a></li>
+                    <li><a href="../foundation/color.html"
+                        class="link-dark d-inline-flex text-decoration-none rounded">Color</a></li>
+                    <li><a href="../foundation/logo.html"
+                        class="link-dark d-inline-flex text-decoration-none rounded">Logo</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                  data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+                  Components
+                </button>
+                <div class="collapse show" id="components-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="../components/navbar.html"
+                        class="link-dark d-inline-flex text-decoration-none rounded">Navigation Bar</a></li>
+                    <li><a href="../components/button.html"
+                        class="link-dark d-inline-flex text-decoration-none rounded">Buttons</a></li>
+                    <li><a href="../components/info.html"
+                        class="link-dark d-inline-flex text-decoration-none rounded">Information Boxes</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Case Study Challenge
+                        Section</a></li>
+                    <li><a href="../components/footer.html"
+                        class="link-dark d-inline-flex text-decoration-none rounded">Footer</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                  data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+                  Page Patterns
+                </button>
+                <div class="collapse" id="patterns-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="../patterns/page1.html"
+                        class="link-dark d-inline-flex text-decoration-none rounded">Homepage</a></li>
+                    <li><a href="../patterns/page2.html"
+                        class="link-dark d-inline-flex text-decoration-none rounded">Case Study</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <!-- === Challenge Component Section === -->
+        <section id="component-navbar" class="navbar-comp-margin py-5">
+          <div class="text-box">
+            <h2 class="allura-regular-h2 ">Case Study Challenge Section</h2>
+          </div>
+          <h4 class="avenir-h4">Preview</h4>
+          <p class="text-muted avenir-p">
+            Desktop: wide banner;
+            Mobile: square card.
+          </p>
+
+
+          <!-- Desktop variant -->
+          <div class="preview-box">
+            <!-- Desktop -->
+            <div class="challenge-desktop mb-4" style="background-image: url('../images/challenge-section-banner.png')"
+              role="region" aria-labelledby="challenge-heading">
+              <div class="overlay text-white text-center p-5">
+                <h2 id="challenge-heading">The Challenge</h2>
+                <p>
+                  How can a technology-based solution enable users to collaboratively
+                  plan itineraries and share experiences in real time—while leveraging
+                  offline accessibility and gamified rewards to motivate exploration
+                  without feeling intrusive?
+                </p>
+              </div>
+            </div>
+
+            <!-- Mobile -->
+            <div class="challenge-mobile mb-4" style="background-image: url('../images/challenge-section-banner.png')"
+              role="region" aria-labelledby="challenge-heading-mobile">
+              <div class="overlay text-white text-center p-4">
+                <h2 id="challenge-heading-mobile">The Challenge</h2>
+                <p>
+                  How can a technology-based solution enable users to collaboratively
+                  plan itineraries and share experiences in real time—while leveraging
+                  offline accessibility and gamified rewards to motivate exploration
+                  without feeling intrusive?
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Code Example -->
+          </br>
+          <h4 class="avenir-h4">Code</h4>
+
+          <div class="code-background">
+            <pre class="language-markup"><code>
+    &lt;div class="preview-box"&gt;
+      &lt;!-- Desktop --&gt;
+      &lt;div class="challenge-desktop mb-4"
+           style="background-image: url('../images/challenge-section-banner.png')"
+           role="region" aria-labelledby="challenge-heading"&gt;
+        &lt;div class="overlay text-white text-center p-5"&gt;
+          &lt;h2 id="challenge-heading"&gt;The Challenge&lt;/h2&gt;
+          &lt;p&gt;
+            How can a technology-based solution enable users to collaboratively
+            plan itineraries and share experiences in real time—while leveraging
+            offline accessibility and gamified rewards to motivate exploration
+            without feeling intrusive?
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Mobile --&gt;
+      &lt;div class="challenge-mobile mb-4"
+           style="background-image: url('../images/challenge-section-banner.png')"
+           role="region" aria-labelledby="challenge-heading-mobile"&gt;
+        &lt;div class="overlay text-white text-center p-4"&gt;
+          &lt;h2 id="challenge-heading-mobile"&gt;The Challenge&lt;/h2&gt;
+          &lt;p&gt;
+            How can a technology-based solution enable users to collaboratively
+            plan itineraries and share experiences in real time—while leveraging
+            offline accessibility and gamified rewards to motivate exploration
+            without feeling intrusive?
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  </code></pre>
+          </div>
+          <div>
+          </br>
+          <h4 class="avenir-h4">Accessibility Considerations</h4>
+          <p class="avenir-p">Assigned roles and aria labels to define 
+            meaningful content areas and provide clear labels for assistive 
+            technologies. Maintaining high color contrast between text and 
+            background images ensures support for readability. Use of 
+            consistent  layout and text structure across desktop and mobile 
+            views to ensure a predictable experience for all users.</p>
+          </div>
+
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle (Popper + JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+    @font-face {
+        font-family: 'Avenir Bold'; /* Replace with the name you want to use */
+        src: url('../fonts/Avenir-Heavy-05.ttf') format('truetype'); /* Or .ttf */
+        /* Add fallback fonts if needed */
+        /* Example:  font-style: normal; */
+        /* Example: font-weight: 400; */
+        }
+
+    @font-face {
+        font-family: 'Avenir Roman'; /* Replace with the name you want to use */
+        src: url('../fonts/Avenir-Roman-12.ttf') format('truetype'); /* Or .ttf */
+        /* Add fallback fonts if needed */
+        /* Example:  font-style: normal; */
+        /* Example: font-weight: 400; */
+        }
+    
+    .preview-box{
+        padding: 40px;
+        /* background-color: #f8f9fa; */
+        border: 1px solid #717171;
+        border-radius: 0.25rem;
+
+    }
+/*–– Navbar Component Styles ––*/
+    /* add !important so nothing else can override */
+    .navbar{
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .nav-link{
+        font-family: 'Avenir Bold' !important;
+        font-size: 0.6rem;
+    }
+
+    .navbar-component {
+      background-color: #fde3e3 !important;
+      border-bottom: 2px solid #430219 !important;
+    }
+    .navbar-component .navbar-brand img {
+      width: 220px;
+      height: auto;
+    }
+    .navbar-component .nav-link {
+      color: #002800 !important;
+      font-family: 'Avenir Bold' !important;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+    .navbar-component .nav-link:hover {
+      color: #430219 !important;
+    }
+    .navbar-comp-margin{
+      margin: 0 60px 0 60px;
+    }
+    /* Code block styling */
+    .code-background {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 0.25rem;
+      /* overflow-x: auto; */
+    }
+
+    .navbar-nav {
+  display: flex;       /* ensure it’s a flex container */
+  gap: 2rem;           /* space between each nav-item */
+}
+
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar-component .navbar-collapse {
+    display: none !important;
+  }
+  .navbar-component .navbar-toggler {
+    display: block !important;
+  }
+} */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar-component .navbar-toggler {
+    display: block !important;
+  }
+}

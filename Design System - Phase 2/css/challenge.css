@@ -1,0 +1,116 @@
+
+
+
+
+    @font-face {
+        font-family: 'Avenir Bold'; /* Replace with the name you want to use */
+        src: url('../fonts/Avenir-Heavy-05.ttf') format('truetype'); /* Or .ttf */
+        /* Add fallback fonts if needed */
+        /* Example:  font-style: normal; */
+        /* Example: font-weight: 400; */
+        }
+
+    @font-face {
+        font-family: 'Avenir Roman'; /* Replace with the name you want to use */
+        src: url('../fonts/Avenir-Roman-12.ttf') format('truetype'); /* Or .ttf */
+        /* Add fallback fonts if needed */
+        /* Example:  font-style: normal; */
+        /* Example: font-weight: 400; */
+        }
+    /*–––– Challenge Component Styles ––––*/
+
+#component-challenge .challenge-mobile {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.challenge-desktop{
+color:#ffffff;
+position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.challenge-desktop h2{
+    color:#ffffff;
+    font-family: 'Avenir Bold';
+    font-size: 2.488rem;
+    margin-bottom: 0.5rem;
+}
+
+.challenge-mobile h2{
+    color:#ffffff;
+    font-family: 'Avenir Bold';
+    font-size: 2.488rem;
+    margin-bottom: 0.5rem;
+}
+
+.challenge-desktop p{
+    color:#ffffff;
+    font-family: 'Avenir Roman';
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.challenge-mobile p{
+    color:#ffffff;
+    font-family: 'Avenir Roman';
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#component-challenge .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    white-space: normal;
+    background-image: url('../images/challenge-section-banner.png')
+}
+#component-challenge h2 {
+    font-family: 'Avenir Roman';
+    font-size: 2rem;
+    color: #131313;
+    margin-bottom: 0.5rem;
+}
+
+#component-challenge p {
+    font-family: 'Avenir Roman';
+    font-size: 1rem;
+    color: #fff;
+} 
+
+/* mobile-first: show square */
+.challenge-desktop { display: none; }
+.challenge-mobile {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+}
+
+/* desktop: show wide banner, hide mobile */
+@media (min-width: 1212px) {
+    .challenge-desktop {
+    display: block;
+    width: 100%;
+    min-height: 200px; /* adjust as needed */
+    }
+    .challenge-mobile {
+    display: None;
+    }
+}
+
+/* Code block styling */
+.code-background {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: .25rem;
+    overflow-x: auto;
+    margin-top: 1.5rem;
+}

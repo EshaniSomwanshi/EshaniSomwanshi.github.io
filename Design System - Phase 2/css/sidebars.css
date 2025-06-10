@@ -1,0 +1,385 @@
+/* ========== RESET & BASE ========== */
+body, html {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background-color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* ========== NAVBAR & SIDEBAR COLORS ========== */
+.bg-success, .bg-light {
+  --bs-bg-opacity: 1;
+  background-color: #430219 !important;
+}
+.navbar-light {
+  background-color: transparent !important;
+}
+.navbar {
+  padding-left: 10px;
+  padding-top: 10px;
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0;
+}
+
+/* ========== NAVBAR TOGGLER ========== */
+@media (min-width: 768px) {
+  .navbar-toggler { display: none; }
+}
+.navbar-hieght { height: 60px; }
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* ========== SIDEBAR OFFCANVAS WIDTH ========== */
+.offcanvas, .offcanvas-md, .offcanvas-sm {
+  --bs-offcanvas-width: 250px;
+}
+
+
+
+
+/* ========== SIDEBAR BUTTONS ========== */
+.btn-toggle {
+  background-color: transparent !important;
+  color: #fff !important;
+  padding: .25rem .5rem;
+  font-weight: 600;
+  border: none;
+  position: relative;
+   white-space: nowrap;
+}
+
+/* Selected (active): Pink bg, green text */
+.btn-toggle.activeLink {
+  background-color: #FFE4E4 !important;
+  color: #002800 !important;
+}
+
+/* Deselected but expanded: Transparent bg, pink text */
+.btn-toggle[aria-expanded="true"]:not(.activeLink) {
+  background-color: transparent !important;
+  color: #FFE4E4 !important;
+}
+
+/* Hover (collapsed or expanded): Pink bg, green text */
+.btn-toggle:hover,
+.btn-toggle:focus,
+.btn-toggle[aria-expanded="true"]:hover,
+.btn-toggle[aria-expanded="true"]:focus {
+  background-color: #FFE4E4 !important;
+  color: #002800 !important;
+}
+
+/* ========== SVG ARROW VIA MASK ========== */
+.btn-toggle::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .5em;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor; /* arrow’s fill will match text color */
+  /* mask with your SVG path */
+  
+  mask:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  -webkit-mask:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: 50% 50%;
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+/* ========== SIDEBAR NAV LINKS ========== */
+.btn-toggle-nav a {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+  color: #fff !important;
+  text-decoration: none;
+  display: block;
+  border-radius: 3px;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:active {
+  color: #002800 !important;
+  background-color: #FFE4E4 !important;
+}
+
+/* ========== SCROLLABLE SIDEBAR ========== */
+.scrollarea {
+  overflow-y: auto;
+}
+
+/* ========== CODE BLOCKS ========== */
+.code-background {
+  background-color: rgba(213, 213, 213, 0.363);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px;
+}
+
+/* ========== PAGINATION ========== */
+.page-link { color: rgb(116, 9, 9); }
+.pagination {
+  --bs-pagination-hover-color: #430219;
+  --bs-pagination-hover-bg: #FFE4E4;
+  --bs-pagination-active-color: #FFE4E4;
+  --bs-pagination-active-bg: #430219;
+  --bs-pagination-active-border-color: #430219;
+}
+.responsive-pagination { flex-wrap: nowrap; }
+@media (max-width: 576px) {
+  .responsive-pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+  .responsive-pagination .page-item {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1px;
+  }
+  .responsive-pagination .page-link {
+    white-space: nowrap;
+  }
+}
+
+/* ========== TEXT BOX ========== */
+
+/* ========== Avenir font import ========== */
+@font-face {
+  font-family: 'Avenir Roman'; /* Replace with the name you want to use */
+  src: url('../fonts/Avenir-Roman-12.ttf') format('truetype'); /* Or .ttf */
+  /* Add fallback fonts if needed */
+  /* Example:  font-style: normal; */
+  /* Example: font-weight: 400; */
+}
+
+@font-face {
+font-family: 'Avenir Heavy'; /* Replace with the name you want to use */
+src: url('../fonts/Avenir-Heavy-05.ttf') format('truetype'); /* Or .ttf */
+/* Add fallback fonts if needed */
+/* Example:  font-style: normal; */
+/* Example: font-weight: 400; */
+}
+
+/* ========== Allura font import ========== */
+.allura-regular {
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+  color: #FFE4E4;
+}
+
+.allura-regular-h2 {
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 0 0 0;
+  font-size: 2.827rem;
+  color: #FFE4E4;
+}
+
+.allura-regular-heading {
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 0 10px 10px;
+  font-size: 2.827rem;
+  color: #131313;
+}
+
+.allura-regular-h1{
+  font-size: 7.993rem;
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.allura-regular-hh2{
+  font-size: 5.653rem;
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.allura-regular-h3{
+  font-size: 3.998rem;
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.allura-regular-h4{
+  font-size: 2.827rem;
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.avenir-h1{
+  font-family: 'Avenir Heavy';
+  font-size: 2.986rem;
+  font-weight: 700;
+  font-style: normal; 
+}
+
+.avenir-h2{
+   font-family: 'Avenir Heavy';
+  font-size: 2.488rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.avenir-h3 {
+  font-family: 'Avenir Heavy';
+  font-size: 2.074rem;
+  font-weight: 700;
+  font-style: normal;
+  
+}
+
+.avenir-h4 {
+  font-family: 'Avenir Heavy';
+  font-size: 1.728rem;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.avenir-h5 {
+  font-family: 'Avenir Heavy';
+  font-size: 1.44rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.avenir-p {
+  font-family: 'Avenir Roman';
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.avenir-p-emp{
+  font-family: 'Avenir Heavy';
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  font-style: italic;
+}
+
+.avenir-linktext{
+  font-family: 'Avenir Roman';
+  font-size: 1rem;
+  font-weight: 700;
+  font-style:normal;
+  text-decoration: underline;
+}
+
+.link-hover:hover{
+  color:#430219 !important;
+  text-decoration: underline;
+  cursor:grab;
+
+}
+
+.textcol{
+
+  color:#7519d8 !important;
+}
+
+.avenir-navtext{
+  font-family: 'Avenir Heavy';
+  font-size: 1rem;
+}
+
+.text-box {
+  max-width: 1040px;
+  margin-bottom: 50px;
+  padding: 24px;
+  background: #430219;
+  border-radius: 5px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+  border: 1px solid #3d3d3d;
+  text-align: left;
+}
+
+.text-box-para{
+  font-family: 'Avenir Roman';
+  color: #FFE4E4;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 0 0 0 0px;
+}
+
+/* ========== UTILITIES ========== */
+.activeLink {
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.offCanvas-home {
+  font-size: 18px;
+}
+
+
+.content{
+  margin-left: 0px;
+}
+
+
+
+
+
+.homepage-spacings{
+  margin-bottom: 20px;
+}
+
+
+.containerone
+{
+  margin-left: -38px;
+}
+
+
+
+.custom-border-bottom {
+  border-bottom: 3px solid #430219 !important;
+}
+
+.align-items-stretch{
+  align-items: stretch;
+}
+
+.code-background pre code {
+  white-space: pre-wrap;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+
+
+
+.offcanvas-body li.mb-1:focus-within > .btn-toggle[aria-expanded="true"]::before,
+#sidebarMenu li.mb-1:focus-within > .btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg) !important;
+}
+
+
+.image-sides{
+  padding-left: 5vw;
+  padding-right: 5vw;
+}

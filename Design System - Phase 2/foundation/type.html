@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eshani Somwanshi - Design System</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/sidebars.css" rel="stylesheet">
+
+  <!-- Google fonts import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+   <link rel="shortcut icon" href="./images/Logos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/Logos/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light bg-success border-bottom-0 sticky-top ">
+    <!-- Navbar toggle button (hamburger icon) -->
+
+
+    <button class="navbar-toggler d-block d-md-none navbar-hieght" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#sidebar" aria-controls="sidebar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+  </nav>
+
+  </nav>
+  <!-- This topbar toggle to the off canvas -->
+  <div class="offcanvas offcanvas-start bg-success d-md-block" tabindex="-1" id="sidebar"
+    aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+
+      <a href="../index.html"
+        class="d-flex justify-content-center align-items-center text-center pb-3 link-dark text-decoration-none border-bottom">
+        <img src="../images/Logos/White Logo_no bg.png" alt="Eshani Somwanshi Logo" style="height: 120px; width: auto;">
+      </a>
+
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+      </button>
+    </div>
+    <div class="offcanvas-body ">
+      <ul class="nav flex-column">
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="../index.html" class="link-dark d-inline-flex text-decoration-none rounded">
+                  <div class="offCanvas-home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-left" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                    </svg>
+                    Home
+                  </div>
+
+                </a></li>
+            </ul>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle activeLink" data-bs-toggle="collapse" data-bs-target="#foundations-collapse"
+              aria-expanded="true">
+              Foundations
+            </button>
+            <div class="collapse show" id="foundations-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded "><span
+                      class="activeLink rounded">Typography</span></a></li>
+                <li><a href="color.html" class="link-dark d-inline-flex text-decoration-none rounded">Color</a></li>
+                <li><a href="logo.html" class="link-dark d-inline-flex text-decoration-none rounded">Logo</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+              data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+              Components
+            </button>
+            <div class="collapse" id="components-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="../components/navbar.html"
+                    class="link-dark d-inline-flex text-decoration-none rounded">Navigation Bar</a></li>
+                <li><a href="../components/button.html"
+                    class="link-dark d-inline-flex text-decoration-none rounded">Buttons</a></li>
+                <li><a href="../components/info.html"
+                    class="link-dark d-inline-flex text-decoration-none rounded">Information Boxes</a></li>
+                <li><a href="../components/challenge.html"
+                    class="link-dark d-inline-flex text-decoration-none rounded">Case Study Challenge Section</a></li>
+                <li><a href="../components/footer.html"
+                    class="link-dark d-inline-flex text-decoration-none rounded">Footer</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+              data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+              Page Patterns
+            </button>
+            <div class="collapse" id="patterns-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="../patterns/page1.html"
+                    class="link-dark d-inline-flex text-decoration-none rounded">Homepage</a></li>
+                <li><a href="../patterns/page2.html" class="link-dark d-inline-flex text-decoration-none rounded">Case
+                    Study</a></li>
+              </ul>
+        </ul>
+    </div>
+  </div>
+  <!-- This is the sidebar menu -->
+  <div class="container-fluid ">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar shadow">
+        <div class="position-sticky bg-success vh-100">
+          <div class="pt-3">
+
+            <a href="../index.html"
+              class="d-flex justify-content-center align-items-center text-center pb-3 link-dark text-decoration-none border-bottom">
+              <img src="../images/Logos/White Logo_no bg.png" alt="Eshani Somwanshi Logo"
+                style="height: 120px; width: auto;"> </a>
+
+            <ul class="nav flex-column">
+              <ul class="list-unstyled ps-0">
+
+                <li class="mb-1">
+                  <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
+                    Foundations
+                  </button>
+                  <div class="collapse show" id="foundations-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"><span
+                            class="activeLink rounded">Typography</span></a></li>
+                      <li><a href="color.html" class="link-dark d-inline-flex text-decoration-none rounded">Color</a>
+                      </li>
+                      <li><a href="logo.html" class="link-dark d-inline-flex text-decoration-none rounded">Logo</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+                    Components
+                  </button>
+                  <div class="collapse" id="components-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="../components/navbar.html"
+                          class="link-dark d-inline-flex text-decoration-none rounded">Navigation Bar</a></li>
+                      <li><a href="../components/button.html"
+                          class="link-dark d-inline-flex text-decoration-none rounded">Buttons</a></li>
+                      <li><a href="../components/info.html"
+                          class="link-dark d-inline-flex text-decoration-none rounded">Information Boxes</a></li>
+                      <li><a href="../components/challenge.html"
+                          class="link-dark d-inline-flex text-decoration-none rounded">Case Study Challenge Section</a>
+                      </li>
+                      <li><a href="../components/footer.html"
+                          class="link-dark d-inline-flex text-decoration-none rounded">Footer</a></li>
+
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+                    Page Patterns
+                  </button>
+                  <div class="collapse" id="patterns-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="../patterns/page1.html"
+                          class="link-dark d-inline-flex text-decoration-none rounded">Homepage</a></li>
+                      <li><a href="../patterns/page2.html"
+                          class="link-dark d-inline-flex text-decoration-none rounded">Case Study</a></li>
+                    </ul>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <!-- Page Content  -->
+        <div class="container-fluid overflow-auto">
+          <div class="row p-5">
+            <div id="content">
+              <div class="text-box">
+                <h2 class="allura-regular-h2 ">Typography</h2>
+              </div>
+
+
+              <h2 class="avenir-h2"> Avenir </h2>
+              <p class="avenir-p mt-0">
+                Scale: 1.200 - Minor Third | Base Size: 16px | Screen Sizes : LG, MD, SM.
+              </p>
+              <!-- row item-heading 1 -->
+              <!-- <ul class="border-bottom border-1"> -->
+              <div class="row border-bottom border-1">
+                <!-- left-element-heading-body -->
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                  <div>
+                    <h1 class="avenir-h1 pt-2">Heading 1</h1>
+                  </div>
+
+                  <div>
+                    <p class="pe-3 pb-4 pt-2 avenir-p">
+
+                      Last night, Darth Vader came down from planet Vulcan.
+                      And he told me that if I didn't take Lorraine, that
+                      he'd melt my brain. Of course not, Biff, now I wouldn't
+                      want that to happen. Now, uh, I'll finish those reports
+                      up tonight, and I'll run em them on over first thing
+                      tomorrow, alright? What? Doc? Take care.</p>
+
+                  </div>
+                </div>
+                <!-- right-element-info -->
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                  <p class="px-lg-5 px-md-5 px-sm-1 pt-lg-5 pt-md-5 pt-sm-1 laila-body esh-info-color">
+                    font-family: 'Avenir Heavy';
+                    </br>font-size: 2.986rem;
+                    </br>font-weight: 700;
+                    </br>font-style: normal;
+                  </p>
+                </div>
+              </div>
+              <!-- </ul> -->
+              <!-- row item-heading 1 END -->
+
+              <!-- row item-heading 2 -->
+              <!-- <ul class="border-bottom border-1"> -->
+              <div class="row border-bottom border-1">
+                <!-- left-element-heading-body -->
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                  <div>
+                    <h2 class="avenir-h2 pt-4">Heading 2</h2>
+                  </div>
+
+                  <div>
+                    <p class="pe-3 pb-4 pt-2 avenir-p">
+
+                      Last night, Darth Vader came down from planet Vulcan.
+                      And he told me that if I didn't take Lorraine, that
+                      he'd melt my brain. Of course not, Biff, now I wouldn't
+                      want that to happen. Now, uh, I'll finish those reports
+                      up tonight, and I'll run em them on over first thing
+                      tomorrow, alright? What? Doc? Take care.</p>
+                  </div>
+                </div>
+                <!-- right-element-info -->
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                  <p class="px-lg-5 px-md-5 px-sm-1 pt-lg-5 pt-md-5 pt-sm-1 laila-body esh-info-color">
+
+                    font-family: 'Avenir Heavy';
+                    </br>font-size: 2.488rem;
+                    </br>font-weight: 700;
+                    </br>font-style: normal;
+                  </p>
+                </div>
+              </div>
+              <!-- </ul> -->
+              <!-- row item-heading 2 END -->
+
+              <!-- row item-heading 3 -->
+              <!-- <ul class="border-bottom border-1"> -->
+              <div class="row border-bottom border-1">
+                <!-- left-element-heading-body -->
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                  <div>
+                    <h3 class="avenir-h3 pt-4">Heading 3</h3>
+                  </div>
+
+                  <div>
+                    <p class="pe-3 pb-4 pt-2 avenir-p">
+
+                      Last night, Darth Vader came down from planet Vulcan.
+                      And he told me that if I didn't take Lorraine, that
+                      he'd melt my brain. Of course not, Biff, now I wouldn't
+                      want that to happen. Now, uh, I'll finish those reports
+                      up tonight, and I'll run em them on over first thing
+                      tomorrow, alright? What? Doc? Take care.</p>
+
+                  </div>
+                </div>
+                <!-- right-element-info -->
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                  <p class="px-lg-5 px-md-5 px-sm-1 pt-lg-5 pt-md-5 pt-sm-1 laila-body esh-info-color">
+                    font-family: 'Avenir Heavy';
+                    </br>font-size: 2.074rem;
+                    </br>font-weight: 700;
+                    </br>font-style: normal;
+
+                  </p>
+                </div>
+              </div>
+              <!-- </ul> -->
+              <!-- row item-heading 3 END -->
+
+
+              <!-- row item-heading 4 -->
+              <!-- <ul class="border-bottom border-1"> -->
+              <div class="row border-bottom border-1">
+                <!-- left-element-heading-body -->
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                  <div>
+                    <h4 class="avenir-h4 pt-4">Heading 4</h4>
+                  </div>
+
+                  <div>
+                    <p class="pe-3 pb-4 pt-2 avenir-p">
+
+                      Last night, Darth Vader came down from planet Vulcan.
+                      And he told me that if I didn't take Lorraine, that
+                      he'd melt my brain. Of course not, Biff, now I wouldn't
+                      want that to happen. Now, uh, I'll finish those reports
+                      up tonight, and I'll run em them on over first thing
+                      tomorrow, alright? What? Doc? Take care.</p>
+
+                  </div>
+                </div>
+                <!-- right-element-info -->
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                  <p class="px-lg-5 px-md-5 px-sm-1 pt-lg-5 pt-md-5 pt-sm-1 laila-body esh-info-color">
+                    font-family: 'Avenir Heavy';
+                    </br>font-size: 1.728rem;
+                    </br>font-weight: 400;
+                    </br>font-style: normal;
+                  </p>
+                </div>
+              </div>
+              <!-- </ul> -->
+              <!-- row item-heading 4 END -->
+              <!-- <ul class="border-bottom border-1"> -->
+              <div class="row border-bottom border-1">
+                <!-- left-element-heading-body -->
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                  <div>
+                    <h5 class="avenir-h4 pt-4">Heading 5</h5>
+                  </div>
+
+                  <div>
+                    <p class="pe-3 pb-4 pt-2 avenir-p">
+
+                      Last night, Darth Vader came down from planet Vulcan.
+                      And he told me that if I didn't take Lorraine, that
+                      he'd melt my brain. Of course not, Biff, now I wouldn't
+                      want that to happen. Now, uh, I'll finish those reports
+                      up tonight, and I'll run em them on over first thing
+                      tomorrow, alright? What? Doc? Take care.</p>
+
+                  </div>
+                </div>
+                <!-- right-element-info -->
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                  <p class="px-lg-5 px-md-5 px-sm-1 pt-lg-5 pt-md-5 pt-sm-1 laila-body esh-info-color">
+                    font-family: 'Avenir Heavy';
+                    </br>font-size: 1.44rem;
+                    </br>font-weight: 400;
+                    </br>font-style: normal;
+
+                  </p>
+                </div>
+              </div>
+              <!-- </ul> -->
+              <!-- row item-heading 5 END -->
+
+              <!-- row item-heading 6 -->
+              <!-- <ul class="border-bottom border-1"> -->
+              <div class="row border-bottom border-1">
+                <!-- left-element-heading-body -->
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                  <div>
+                    <p class="avenir-p pt-4">Body Text</p>
+                  </div>
+
+                  <div>
+                    <p class="pe-3 pb-4 pt-2 avenir-p">
+
+                      Last night, Darth Vader came down from planet Vulcan.
+                      And he told me that if I didn't take Lorraine, that
+                      he'd melt my brain. Of course not, Biff, now I wouldn't
+                      want that to happen. Now, uh, I'll finish those reports
+                      up tonight, and I'll run em them on over first thing
+                      tomorrow, alright? What? Doc? Take care.</p>
+
+                  </div>
+                </div>
+                <!-- right-element-info -->
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                  <p class="px-lg-5 px-md-5 px-sm-1 pt-lg-5 pt-md-5 pt-sm-1 laila-body esh-info-color">
+
+                    font-family: 'Avenir Roman';
+                    </br>font-size: 1rem;
+                    </br>font-weight: 400;
+                    </br>font-style: normal;
+
+                  </p>
+                </div>
+              </div>
+              <!-- </ul> -->
+              <!-- row item-heading 6 END -->
+
+              <!-- row item-heading 7 -->
+              <!-- <ul class="border-bottom border-1"> -->
+              <div class="row border-bottom border-1">
+                <!-- left-element-heading-body -->
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                  <div>
+                    <p class="avenir-p-emp pt-4">Emphasized Text</p>
+                  </div>
+
+                  <div>
+                    <p class="pe-3 pb-4 pt-2 avenir-p">
+
+                      Last night, Darth Vader came down from planet Vulcan.
+                      And he told me that if I didn't take Lorraine, that
+                      he'd melt my brain. <span class="avenir-p-emp">Of course not, Biff, now I wouldn't
+                        want that to happen.</span> Now, uh, I'll finish those reports
+                      up tonight, and I'll run em them on over first thing
+                      tomorrow, alright? What? Doc? Take care.</p>
+
+                  </div>
+                </div>
+                <!-- right-element-info -->
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                  <p class="px-lg-5 px-md-5 px-sm-1 pt-lg-5 pt-md-5 pt-sm-1 laila-body esh-info-color">
+
+                    font-family: 'Avenir Heavy';
+                    </br>font-size: 1rem;
+                    </br>font-weight: 700;
+                    </br>font-style: normal;
+                    </br>font-style: italic;
+
+                  </p>
+                </div>
+              </div>
+              </ul>
+              <!-- row item-heading 7 END -->
+
+              <!-- row item-heading 8 -->
+              <!-- <ul > -->
+
+              <div class="row custom-border-bottom ">
+                <!-- left-element-heading-body -->
+                <div class="col-lg-7 col-md-7 col-sm-12">
+
+                  <div>
+
+                    <p class="avenir-linktext pt-4 ">
+                      <a class="link-hover" href="#">Link Text</a>
+                    </p>
+                    <p class="avenir-linktext pt-1 textcol link-hover">Link Text Hover</p>
+                  </div>
+
+                  <div>
+                    <p class="pe-3 pb-4 pt-2 avenir-p">
+
+                      Last night, Darth Vader came down from planet Vulcan.
+                      And he told me that if I didn't take Lorraine, that
+                      he'd melt my brain. Of course not, Biff, now I wouldn't
+                      want that to happen. <a class="link-hover" href="Hierarchy 2.html"> Now, uh, I'll finish those
+                        reports</a>
+                      up tonight, and I'll run em them on over first thing
+                      tomorrow, alright? What? Doc? Take care.</p>
+
+                  </div>
+                </div>
+                <!-- right-element-info -->
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                  <p class="px-lg-5 px-md-5 px-sm-1 pt-lg-5 pt-md-5 pt-sm-1 laila-body esh-info-color">
+                    font-family: 'Avenir Roman';
+                    </br>font-size: 1rem;
+                    </br>font-weight: 700;
+                    </br>font-style: normal;
+                    </br>text-decoration: underline;
+                    </br>
+                    </br> <strong>Hover:</strong>
+                    </br> color: #430219;
+                    </br> text-decoration: underline;
+                    </br> cursor: grab;
+                    </br>
+                    </br>
+                  </p>
+                </div>
+              </div>
+
+              <!-- </ul> -->
+              <!-- row item-heading 8 END -->
+
+              <!-- ALLURA START -->
+
+            </div>
+            <div id="content-Allura">
+              <h2 class="allura-regular-heading mt-5"> Allura </h2>
+              <p class="avenir-p mt-0">
+                Scale: 1.414 - Augmented Fourth | Base Size: 16px | Screen Sizes : LG, MD, SM.
+              </p>
+              <!-- row item-heading 1 -->
+              <!-- <ul class="border-bottom border-1"> -->
+              <div class="row border-bottom border-1">
+                <!-- left-element-heading-body -->
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                  <div>
+                    <h1 class="allura-regular-h1 pt-2">Heading 1</h1>
+                  </div>
+
+                  <div>
+                    <p class="pe-3 pb-4 pt-2 avenir-p">
+
+                      Last night, Darth Vader came down from planet Vulcan.
+                      And he told me that if I didn't take Lorraine, that
+                      he'd melt my brain. Of course not, Biff, now I wouldn't
+                      want that to happen. Now, uh, I'll finish those reports
+                      up tonight, and I'll run em them on over first thing
+                      tomorrow, alright? What? Doc? Take care.</p>
+
+                  </div>
+                </div>
+                <!-- right-element-info -->
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                  <p class="px-lg-5 px-md-5 px-sm-1 pt-lg-5 pt-md-5 pt-sm-1 laila-body esh-info-color">
+                    font-family: 'Allura' , cursive;
+                    </br>font-size: 7.993rem;
+                    </br>font-weight: 400;
+                    </br>font-style: normal;
+
+                  </p>
+                </div>
+              </div>
+              <!-- </ul> -->
+              <!-- row item-heading 1 END -->
+
+              <!-- row item-heading 2 -->
+              <!-- <ul class="border-bottom border-1"> -->
+              <div class="row border-bottom border-1">
+                <!-- left-element-heading-body -->
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                  <div>
+                    <h2 class="allura-regular-hh2 pt-4">Heading 2</h2>
+                  </div>
+
+                  <div>
+                    <p class="pe-3 pb-4 pt-2 avenir-p">
+
+                      Last night, Darth Vader came down from planet Vulcan.
+                      And he told me that if I didn't take Lorraine, that
+                      he'd melt my brain. Of course not, Biff, now I wouldn't
+                      want that to happen. Now, uh, I'll finish those reports
+                      up tonight, and I'll run em them on over first thing
+                      tomorrow, alright? What? Doc? Take care.</p>
+                  </div>
+                </div>
+                <!-- right-element-info -->
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                  <p class="px-lg-5 px-md-5 px-sm-1 pt-lg-5 pt-md-5 pt-sm-1 laila-body esh-info-color">
+
+                    font-family: 'Allura' , cursive;
+                    </br>font-size: 5.653rem;
+                    </br>font-weight: 400;
+                    </br>font-style: normal;
+                  </p>
+                </div>
+              </div>
+              <!-- </ul> -->
+              <!-- row item-heading 2 END -->
+
+              <!-- row item-heading 3 -->
+              <!-- <ul class="border-bottom border-1"> -->
+              <div class="row border-bottom border-1">
+                <!-- left-element-heading-body -->
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                  <div>
+                    <h3 class="allura-regular-h3 pt-4">Heading 3</h3>
+                  </div>
+
+                  <div>
+                    <p class="pe-3 pb-4 pt-2 avenir-p">
+
+                      Last night, Darth Vader came down from planet Vulcan.
+                      And he told me that if I didn't take Lorraine, that
+                      he'd melt my brain. Of course not, Biff, now I wouldn't
+                      want that to happen. Now, uh, I'll finish those reports
+                      up tonight, and I'll run em them on over first thing
+                      tomorrow, alright? What? Doc? Take care.</p>
+
+                  </div>
+                </div>
+                <!-- right-element-info -->
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                  <p class="px-lg-5 px-md-5 px-sm-1 pt-lg-5 pt-md-5 pt-sm-1 laila-body esh-info-color">
+                    font-family: 'Allura'; cursive;
+                    </br>font-size: 3.998rem;
+                    </br>font-weight: 400;
+                    </br>font-style: normal;
+
+                  </p>
+                </div>
+              </div>
+              <!-- </ul> -->
+              <!-- row item-heading 3 END -->
+
+
+              <!-- row item-heading 4 -->
+              <!-- <ul class="border-bottom border-1"> -->
+              <div class="row ">
+                <!-- left-element-heading-body -->
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                  <div>
+                    <h4 class="allura-regular-h4 pt-4">Heading 4</h4>
+                  </div>
+
+                  <div>
+                    <p class="pe-3 pb-4 pt-2 avenir-p">
+
+                      Last night, Darth Vader came down from planet Vulcan.
+                      And he told me that if I didn't take Lorraine, that
+                      he'd melt my brain. Of course not, Biff, now I wouldn't
+                      want that to happen. Now, uh, I'll finish those reports
+                      up tonight, and I'll run em them on over first thing
+                      tomorrow, alright? What? Doc? Take care.</p>
+
+                  </div>
+                </div>
+                <!-- right-element-info -->
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                  <p class="px-lg-5 px-md-5 px-sm-1 pt-lg-5 pt-md-5 pt-sm-1 laila-body esh-info-color">
+                    font-family: 'Allura'; cursive;
+                    </br>font-size: 2.827rem;
+                    </br>font-weight: 400;
+                    </br>font-style: normal;
+                  </p>
+                </div>
+              </div>
+              <!-- </ul> -->
+              <!-- row item-heading 4 END -->
+
+
+            </div>
+
+          </div>
+
+        </div>
+    </div>
+  </div>
+  </main>
+  </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  </script>
+</body>
+
+</html>
